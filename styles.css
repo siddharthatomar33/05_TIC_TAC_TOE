@@ -27,3 +27,15 @@
     padding: 0.5rem 3rem;
     text-align: center;
 }
+
+.tic-tac-toe{
+    width: 90%;
+    max-width: 20rem;
+    background-color: rgb(255, 255, 255,0.15);
+    border-radius: 1rem;
+    border: 1px solid  rgb(255, 255, 255,0.25);
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    aspect-ratio: 1/1;
+}
