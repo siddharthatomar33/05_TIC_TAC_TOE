@@ -26,3 +26,9 @@ function initGame(){
 
 initGame();
 
+boxes.forEach((box,index) =>{
+    box.addEventListener("click",()=>{
+        handleClick(index);
+    })
+    
+});
