@@ -64,7 +64,12 @@ function checkGameOver(){
             boxes[position[2]].classList.add("win");
 
         }    
-    })
+    });
+
+    //we have the winner
+    if(answer!==""){
+        
+    }
 
 }
 
