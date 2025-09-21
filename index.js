@@ -26,9 +26,28 @@ function initGame(){
 
 initGame();
 
+function swapTurn(){
+    if(currentPlayer==="X"){
+        currentPlayer="O"
+    }
+}
+
+function handleClick(index){
+    if(gameGrid[index]===""){   //agar current index ki value empty hai tbhi further aage kaam hoga 
+       boxes[index].innerText=currentPlayer;    //box ke andar X ya O aagya,UI prr update
+       gameGrid[index]=currentPlayer;   // inner logical ko update kia
+       //swap karo turn ko
+       swapTurn();
+       //check koi jeeta toh ni
+       checkGameOver();
+    }
+}
+
+
 boxes.forEach((box,index) =>{ //har box ke liye niche wali propertyuse hogi
     box.addEventListener("click",()=>{
         handleClick(index);
     })
     
 });
+
