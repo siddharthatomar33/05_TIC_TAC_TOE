@@ -80,9 +80,18 @@ function checkGameOver(){
 
     //whether there's is tie
     let fillCount=0;
-    
+    gameGrid.forEach((box)=>{
+        if(box!=="")
+            fillCount++;
+    });
 
 }
+//board is filled,game is TIE
+if(fillCount===9){
+    gameInfo.innerText="game tied !";
+    newGameBtn.classList.add("active");
+}
+
 
 function handleClick(index){
     if(gameGrid[index]===""){   //agar current index ki value empty hai tbhi further aage kaam hoga 
