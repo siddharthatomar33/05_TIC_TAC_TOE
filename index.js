@@ -47,7 +47,20 @@ function checkGameOver(){
     let answer="";    //starting may empty
     
     winningPositions.forEach((position)=>{
-        
+        //all 3 boxes should not have empty value & but have same values
+        if((gameGrid[position[0]] !==""|| gameGrid[position][1] !=="" || gameGrid[position][2] !=="")
+           &&(gameGrid[position][0] ===gameGrid[position][1]) && (gameGrid[position][1] ===gameGrid[position][2])){
+           
+            //check winner is x
+            if(gameGrid[position[0]]==="X"){
+                 answer="X";
+            }  
+            else{
+                answer="O";
+            }
+            //now we know X/O is a winner
+            
+        }    
     })
 
 }
