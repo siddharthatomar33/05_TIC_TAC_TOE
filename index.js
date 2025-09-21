@@ -46,6 +46,9 @@ function swapTurn(){  //swap wala function
 function checkGameOver(){
     let answer="";    //starting may empty
     
+    winningPositions.forEach((position)=>{
+        
+    })
 
 }
 
