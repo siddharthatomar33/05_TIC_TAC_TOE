@@ -78,6 +78,10 @@ function checkGameOver(){
             return;
     }
 
+    //whether there's is tie
+    let fillCount=0;
+    
+
 }
 
 function handleClick(index){
