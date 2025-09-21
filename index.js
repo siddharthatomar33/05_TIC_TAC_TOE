@@ -20,6 +20,12 @@ const winningPositions=[
 function initGame(){
     currentPlayer="X";
     gameGrid=["","","","","","","","",""];  //shuru may grid khali rahegi
+    //UI prr empty karna hoga
+    boxes.forEach((box,index)=>{
+        box.innerText="";    //empty all boxes
+         boxes[index].style.pointerEvents="all";  // all cursor pointer are normal 
+
+    });
     newGameBtn.classList.remove("active");  //newgame a button ko tbhi lao jbb need ho
     gameInfo.innerText=`Current Player -${currentPlayer}`;   //put value of cuuent player
 }
@@ -61,3 +67,4 @@ boxes.forEach((box,index) =>{ //har box ke liye niche wali propertyuse hogi
     
 });
 
+newGameBtn.addEventListener("click",initGame); // reset all the game from the beginning
