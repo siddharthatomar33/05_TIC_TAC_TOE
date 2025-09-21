@@ -58,8 +58,11 @@ function checkGameOver(){
             else{
                 answer="O";
             }
-            //now we know X/O is a winner
-            
+            //now we know X/O is a winner (bg color)
+            boxes[position[0]].classList.add("win");
+            boxes[position[1]].classList.add("win");
+            boxes[position[2]].classList.add("win");
+
         }    
     })
 
