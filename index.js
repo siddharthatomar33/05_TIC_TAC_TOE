@@ -26,16 +26,26 @@ function initGame(){
 
 initGame();
 
-function swapTurn(){
+function swapTurn(){  //swap wala function
     if(currentPlayer==="X"){
-        currentPlayer="O"
+        currentPlayer="O";
     }
+    else{
+        currentPlayer="X";
+    }
+    //UI update
+    gameInfo.innerText=`Current Player - ${currentPlayer}`;
+}
+
+function checkGameOver(){
+
 }
 
 function handleClick(index){
     if(gameGrid[index]===""){   //agar current index ki value empty hai tbhi further aage kaam hoga 
        boxes[index].innerText=currentPlayer;    //box ke andar X ya O aagya,UI prr update
        gameGrid[index]=currentPlayer;   // inner logical ko update kia
+       boxes[index].style.pointerEvents="none";   //jaha prr already value h waha cursor pointer nhi banega 
        //swap karo turn ko
        swapTurn();
        //check koi jeeta toh ni
