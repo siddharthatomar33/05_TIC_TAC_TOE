@@ -26,7 +26,7 @@ function initGame(){
 
 initGame();
 
-boxes.forEach((box,index) =>{
+boxes.forEach((box,index) =>{ //har box ke liye niche wali propertyuse hogi
     box.addEventListener("click",()=>{
         handleClick(index);
     })
