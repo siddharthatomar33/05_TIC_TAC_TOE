@@ -58,6 +58,11 @@ function checkGameOver(){
             else{
                 answer="O";
             }
+
+            //disable pointer events
+            boxes.forEach((box)=>{
+                box.style.pointerEvents="none"; //winner mil chuka hai aage cursor pointer ki need nhi
+            })
             //now we know X/O is a winner (bg color)
             boxes[position[0]].classList.add("win");
             boxes[position[1]].classList.add("win");
@@ -68,7 +73,9 @@ function checkGameOver(){
 
     //we have the winner
     if(answer!==""){
-        
+        gameInfo.innerText=`Winner Player-${answer}`;
+        newGameBtn.classList.add("active");
+            return;
     }
 
 }
