@@ -22,7 +22,7 @@ function initGame(){
     gameGrid=["","","","","","","","",""];  //shuru may grid khali rahegi
     //UI prr empty karna hoga
     boxes.forEach((box,index)=>{
-        box.innerText="";    //empty all boxes
+        box.innerText="";    //empty all boxes..
          boxes[index].style.pointerEvents="all";  // all cursor pointer are normal 
         //remove green color,initailise box with css properties again
         box.classList=`box box${index+1}`
