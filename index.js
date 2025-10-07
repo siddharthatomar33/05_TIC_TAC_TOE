@@ -20,7 +20,7 @@ const winningPositions=[
 function initGame(){
     currentPlayer="X";
     gameGrid=["","","","","","","","",""];  //shuru may grid khali rahegi...
-    //UI prr empty karna hoga..
+    //UI prr empty karna hoga....
     boxes.forEach((box,index)=>{
         box.innerText="";    //empty all boxes..
          boxes[index].style.pointerEvents="all";  // all cursor pointer are normal 
