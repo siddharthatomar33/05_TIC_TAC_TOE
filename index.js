@@ -24,7 +24,7 @@ function initGame(){
     boxes.forEach((box,index)=>{
         box.innerText="";    //empty all boxes..
          boxes[index].style.pointerEvents="all";  // all cursor pointer are normal 
-        //remove green color,initailise box with css properties again..
+        //remove green color,initailise box with css properties again....
         box.classList=`box box${index+1}`
     });
     newGameBtn.classList.remove("active");  //newgame a button ko tbhi lao jbb need ho
