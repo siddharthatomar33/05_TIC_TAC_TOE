@@ -19,7 +19,7 @@ const winningPositions=[
 //let create a function to initialise the game.....
 function initGame(){
     currentPlayer="X";
-    gameGrid=["","","","","","","","",""];  //shuru may grid khali rahegi
+    gameGrid=["","","","","","","","",""];  //shuru may grid khali rahegi...
     //UI prr empty karna hoga
     boxes.forEach((box,index)=>{
         box.innerText="";    //empty all boxes..
