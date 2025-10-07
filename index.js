@@ -16,7 +16,7 @@ const winningPositions=[
     [2,4,6]
 ];
 
-//let create a function to initialise the game...
+//let create a function to initialise the game.....
 function initGame(){
     currentPlayer="X";
     gameGrid=["","","","","","","","",""];  //shuru may grid khali rahegi
