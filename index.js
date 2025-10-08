@@ -63,7 +63,7 @@ function checkGameOver(){
                 answer="O";
             }
 
-            //disable pointer events
+            //disable pointer events....
             boxes.forEach((box)=>{
                 box.style.pointerEvents="none"; //winner mil chuka hai aage cursor pointer ki need nhi
             })
