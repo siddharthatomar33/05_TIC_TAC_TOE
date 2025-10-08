@@ -55,7 +55,7 @@ function checkGameOver(){
             (gameGrid[position[0]] ===gameGrid[position[1]]) && 
             (gameGrid[position[1]] ===gameGrid[position[2]])){
            
-            //check winner is x
+            //check winner is x.....
             if(gameGrid[position[0]]==="X"){
                  answer="X";
             }  
