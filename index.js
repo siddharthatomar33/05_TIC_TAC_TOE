@@ -40,7 +40,7 @@ function swapTurn(){  //swap wala function...
     else{
         currentPlayer="X";
     }
-    //UI update..
+    //UI update....
     gameInfo.innerText=`Current Player - ${currentPlayer}`;
 }
 
