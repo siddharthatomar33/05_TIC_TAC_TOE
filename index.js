@@ -33,7 +33,7 @@ function initGame(){
 
 initGame();
 
-function swapTurn(){  //swap wala function..
+function swapTurn(){  //swap wala function...
     if(currentPlayer==="X"){
         currentPlayer="O";
     }
