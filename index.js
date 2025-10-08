@@ -45,7 +45,7 @@ function swapTurn(){  //swap wala function...
 }
 
 function checkGameOver(){
-    let answer="";    //starting may empty..
+    let answer="";    //starting may empty....
     
     winningPositions.forEach((position)=>{
         //all 3 boxes should not have empty value & but have same values
