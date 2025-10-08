@@ -67,7 +67,7 @@ function checkGameOver(){
             boxes.forEach((box)=>{
                 box.style.pointerEvents="none"; //winner mil chuka hai aage cursor pointer ki need nhi
             })
-            //now we know X/O is a winner (bg color)
+            //now we know X/O is a winner (bg color)...
             boxes[position[0]].classList.add("win");
             boxes[position[1]].classList.add("win");
             boxes[position[2]].classList.add("win");
